@@ -7,8 +7,11 @@
 }
 :root{
   --pri-clr: #000;
-  --nav-bg-clr: rgba( 150, 150, 150, .2);
+  --nav-bg-clr: rgba( 150, 150, 150, .3);
+  --explore-hover: rgba( 200, 200, 200, .2);
   --txt-clr-1: #f9f9f9;
+  --txt-clr-2: #abbcbd;
+  /* --txt-clr-1: #ffffff; */
 }
 body{
   background: url(./components/main/background-home-desktop.jpg);
@@ -18,25 +21,29 @@ body{
   font-family: "Bellefair", serif;
   font-style: normal;
   color: var(--txt-clr-1);
+
+  height: 100vh;
 }
 header{
   text-transform: uppercase;
   color: var(--txt-clr-1);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: absolute;
-  top: 1rem;
+  top: 2rem;
   inset-inline: 0;
   margin-left: 4rem;
 }
 header nav{
   background-color: var(--nav-bg-clr);
   padding-left: 10rem;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(25px);
 
   display: flex;
   align-items: center;
   width: 60%;
+  height: 6rem;
   padding-left: 7rem;
   position: relative;
   z-index: 2;
@@ -47,35 +54,132 @@ header nav::before{
   content: "";
   display: block;
   height: 2px;
-  width: 26rem;
+  width: 60%;
   position: absolute;
-  left: -24.5rem;
+  left: -54%;
   background-color: var(--nav-bg-clr);
+  /* background-color: var(--txt-clr-1); */
 }
 
 header nav ul{
   display: flex;
+  align-items: center;
   gap: 2rem;
   list-style: none;
+  height: 4rem;
+}
+header nav ul li{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
 }
 header nav ul li a{
-  color: var(--txt-clr-1);
+  color: var(--txt-clr-2);
+  font-size: .95rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
+  letter-spacing: .2rem;
+  transform: scaleY(1.4);
+}
+header nav ul li a span{
+  color: var(--txt-clr-1);
+}
+header nav ul li::after{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+}
+header nav ul li:hover::after{
+  display: block;
+  background-color: var(--txt-clr-1);
 }
 .home{
-  margin-left: 8rem;
+  display: flex;
+  align-items: end;
   
-
-  height: 100vh;
-  padding-top: 25%;
+  /* width: 30.25%; */
+  height: 100%;
+  padding-top: 27%;
+  margin-left: 11rem;
+  /* margin-bottom: 10rem; */
+  /* font-weight: 300; */
+   /* border:  1px solid red; */
+   position: relative;
+}
+.home .left{
+  width: 35%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* border:  1px solid red; */
 }
 .home .left h1{
   display: flex;
   flex-direction: column;
-  font-size: 10rem;
-  transform: scaleY(1.09);
+  gap: 2rem;
+  font-size: 9rem;
+  font-weight: 300;
+  
   text-transform: uppercase;
+  word-spacing: .8rem;
+  letter-spacing: .2rem;
 }
 .home .left h1 span{
+  color: var(--txt-clr-2);
   font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 300;
+  transform: scaleY(1.5);
+}
+.home .left p{
+  width: 100%;
+  color: var(--txt-clr-2);
+  font-family: sans-serif;
+  font-weight: 300;
+  line-height: 2rem;
+  word-spacing: .1rem;
+}
+.home .right{
+  position: absolute;
+  bottom: 0;
+  right: 10.3rem;
+  /* align-self: end; */
+}
+.home .right .explore{
+  background-color: var(--txt-clr-1);
+  color: var(--pri-clr);
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  width: 17rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .right .explore::before{
+  content: "";
+  background-color: var(--explore-hover);
+  display: block;
+  width: calc(17rem + 5rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0;
+  transition: .3s;
+  z-index: -1;
+}
+.home .right .explore:hover::before{
+  opacity: 1;
 }
