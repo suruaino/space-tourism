@@ -7,55 +7,64 @@
 }
 :root{
   --pri-clr: #000;
+  --nav-bg-clr: rgba( 150, 150, 150, .2);
   --txt-clr-1: #f9f9f9;
 }
 body{
-  font-family: "Nanum Gothic", serif;
-  font-family: "Monda", sans-serif;
-  font-family: "Barlow", sans-serif;
+  background: url(./components/main/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Bellefair", serif;
+  font-style: normal;
   color: var(--txt-clr-1);
 }
 header{
-  /* background-color: var(--pri-clr); */
+  text-transform: uppercase;
   color: var(--txt-clr-1);
   display: flex;
   justify-content: space-between;
   position: absolute;
   top: 1rem;
   inset-inline: 0;
-  padding-left: 2rem;
-  padding: 1rem 2rem;
+  margin-left: 4rem;
 }
 header nav{
-  background-color: rgba(100, 100, 100, .8);
-  /* background-color: red; */
+  background-color: var(--nav-bg-clr);
+  padding-left: 10rem;
+  backdrop-filter: blur(10px);
 
   display: flex;
   align-items: center;
   width: 60%;
-  padding-left: 2rem;
+  padding-left: 7rem;
+  position: relative;
   z-index: 2;
+  
 }
+
 header nav::before{
   content: "";
   display: block;
   height: 2px;
-  background-color: var(--pri-clr);
+  width: 26rem;
+  position: absolute;
+  left: -24.5rem;
+  background-color: var(--nav-bg-clr);
 }
+
 header nav ul{
   display: flex;
   gap: 2rem;
   list-style: none;
 }
 header nav ul li a{
-  color: var(--pri-clr);
+  color: var(--txt-clr-1);
   text-decoration: none;
 }
 .home{
-  background: url(./components/main/background-home-desktop.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  margin-left: 8rem;
+  
 
   height: 100vh;
   padding-top: 25%;

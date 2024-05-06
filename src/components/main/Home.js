@@ -1,4 +1,3 @@
-// import background from './components/main/background-home-desktop.jpg';
 
 const Home = () => {
   return (
