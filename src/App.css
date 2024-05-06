@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
-}
+/**My styles**/
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root{
+  --pri-clr: #000;
+  --txt-clr-1: #f9f9f9;
 }
+body{
+  font-family: "Nanum Gothic", serif;
+  font-family: "Monda", sans-serif;
+  font-family: "Barlow", sans-serif;
+  color: var(--txt-clr-1);
+}
+header{
+  /* background-color: var(--pri-clr); */
+  color: var(--txt-clr-1);
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 1rem;
+  inset-inline: 0;
+  padding-left: 2rem;
+  padding: 1rem 2rem;
+}
+header nav{
+  background-color: rgba(100, 100, 100, .8);
+  /* background-color: red; */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  padding-left: 2rem;
+  z-index: 2;
+}
+header nav::before{
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: var(--pri-clr);
+}
+header nav ul{
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+header nav ul li a{
+  color: var(--pri-clr);
+  text-decoration: none;
+}
+.home{
+  background: url(./components/main/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  height: 100vh;
+  padding-top: 25%;
+}
+.home .left h1{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 10rem;
+  transform: scaleY(1.09);
+  text-transform: uppercase;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home .left h1 span{
+  font-size: 1rem;
 }
