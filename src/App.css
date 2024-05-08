@@ -19,6 +19,7 @@ body{
   background-position: center;
   background-size: cover; */
   font-family: "Bellefair", serif;
+  font-weight: 300;
   font-style: normal;
   color: var(--txt-clr-1);
 
@@ -32,7 +33,7 @@ header{
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 2rem;
+  top: 40px;
   inset-inline: 0;
   margin-left: 4rem;
 }
@@ -104,27 +105,57 @@ header nav ul li:hover::after{
 }
 .home{
   background: url(./assets/home/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   align-items: end;
   
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
   height: 100%;
-  padding-top: 27%;
-  /* margin-left: 11rem; */
-  position: relative;
+
+  display: none;
+  
+}
+.home-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* flex-direction: column; */
+  /* align-self: center; */
+  
+  /* gap: 90px; */
+
+  width: 100%;
+  max-width: 78%;
+  /* max-width: 1118.5px; */
+  height: 100%;
+  margin: 387px  auto 100px;
+  /* padding-top: 6rem; */
+  text-transform: uppercase;
+
+  border: 2px solid red;
 }
 .home .left{
-  width: 35%;
+  width: 45%;
+  max-width: 31rem;
   height: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 24px;
+
+  border: 2px solid greenyellow;
 
 }
 .home .left h1{
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  font-size: 9rem;
+  font-size: 150px;
   font-weight: 300;
   
   text-transform: uppercase;
@@ -141,13 +172,14 @@ header nav ul li:hover::after{
 .home .left p{
   width: 100%;
   color: var(--txt-clr-2);
+  font-size: 18px;
   font-family: sans-serif;
   font-weight: 300;
   line-height: 2rem;
   word-spacing: .1rem;
 }
 .home .right{
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   right: 10.3rem;
 
@@ -158,6 +190,7 @@ header nav ul li:hover::after{
   font-size: 2.25rem;
   text-transform: uppercase;
   width: 17rem;
+  width: 274px;
   aspect-ratio: 1;
   border-radius: 50%;
 
@@ -186,45 +219,143 @@ header nav ul li:hover::after{
 /***## Destination styling ##***/
 
 /***### Moon ###***/
-.moon{
+.destination{
   background: url(./components/main/destination/destination-assets/background-destination-desktop.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  display: flex;
-  flex-direction: column;
-
-  min-width: 100%;
-  height: 100%;
-  padding-top: 6rem;
-  text-transform: uppercase;
-}
-
-.moon .content-bx{
   width: 100%;
 
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  
+  /* border: 2px solid red; */
+  /* display: none; */
 }
-.moon .content-bx .right{
+.moon-container{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  
+  gap: 65px;
+
+  width: 100%;
+  max-width: 78%;
+  /* max-width: 1118.5px; */
+  height: 100%;
+  padding-top: 212px;
+  padding-bottom: 6rem;
+  text-transform: uppercase;
+
+  border: 2px solid red;
+}
+.destination h2{
+  /* font-family: "Barlow Condensed" sans-serif; */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+}
+.destination h2 span{
+  color: #695858;
+  font-weight: 650;
+}
+.destination .content-bx{
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  /* gap: 4rem; */
+  gap: 175px;
+  
+}
+.destination .content-bx > .left{
+  max-width: 27.8125rem;
+  aspect-ratio: 1;
+}
+.destination .content-bx > .right{
   max-width: 25%;
   max-width: 27.8125rem;
   color: var(--txt-clr-2);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  gap: 10px;
 }
-.moon .content-bx .right .tab-bx{
+.destination .content-bx .right .tab-bx{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   gap: 2.25rem;
   list-style: none;
+
+  font-size: 1rem;
+  
 }
-.moon .content-bx .right h2{
+.destination .content-bx .right h2{
   color: var(--txt-clr-1);
   font-size: 100px;
-  font-weight: 300;
+ 
 }
-.moon .content-bx .right p{
+.destination .content-bx .right p{
   text-transform: none;
   font-size: 18px;
+  line-height: 2rem;
+  font-weight: 300;
+  font-family: "Barlow", sans-serif;
+}
+
+.more-details{
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 79px;
+
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--txt-clr-2);
+}
+.more-details .left,
+.more-details .right{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.more-details .avg-distance,
+.more-details .travel-time{
+  font-size: 14px;
+}
+
+.more-details .avg-distance__value{
+  font-size:  28px;
+}
+
+
+/***### Crew styles ###***/
+
+.crew{
+  background: url(./components/main/crew/crew-assets/background-crew-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.commander-container{
+  width: 100%;
+  max-width: 78%;
+
+  display: flex;
+
+  border: 1px solid red;
+}
+.crew h2{
   
+}
+.crew h2 span{
+  color: #695858;
+  font-weight: 650;
 }

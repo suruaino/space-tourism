@@ -1,0 +1,36 @@
+import douglas from "./crew-assets/image-douglas-hurley.png";
+const Crew = () => {
+  return (
+    <div className="crew">
+      <div className="commander-container">
+        <div className="left">
+          <h2>
+            <span>02 </span>meet your crew
+          </h2>
+
+          <h3>
+            <span>Commander</span>Douglas Hurley
+          </h3>
+
+          <p>
+            Douglas Gerald Hurley is an American engineer, former Marine Corps
+            pilot and former NASA astronaut. He launched into space for the
+            third time as commander of Crew Dragon Demo-2.
+          </p>
+
+          <div className="indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div className="right">
+          <img src={douglas} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Crew;
