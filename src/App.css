@@ -232,7 +232,7 @@ header nav ul li:hover::after{
   justify-content: center;
   
   /* border: 2px solid red; */
-  /* display: none; */
+  display: none;
 }
 .moon-container{
   display: flex;
@@ -343,7 +343,7 @@ header nav ul li:hover::after{
   
 
   width: 100%;
-  
+  /* display: none; */
 }
 
 .commander-container{
@@ -417,6 +417,8 @@ header nav ul li:hover::after{
   font-size: 18px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 300;
+
+  max-width: 70%;
 }
 
 .crew .indicator{
@@ -429,4 +431,18 @@ header nav ul li:hover::after{
   aspect-ratio: 1;
   border-radius: 50%;
   background-color: var(--h3-span-clr);
+}
+
+
+.technology{
+  background: url(./components/main/technology/technology-assets/background-technology-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  
+
+  width: 100%;
 }
