@@ -16,7 +16,7 @@ const Destination = () => {
               <li>Europa</li>
               <li>Titan</li>
             </ul>
-            <h2>Moon</h2>
+            <h3>Moon</h3>
             <p>
               See our planet as you’ve never seen it before. A perfect relaxing
               trip away to help regain perspective and come back refreshed.

@@ -9,7 +9,7 @@
   --pri-clr: #000;
   --nav-bg-clr: rgba( 150, 150, 150, .3);
   --explore-hover: rgba( 200, 200, 200, .2);
-  --txt-clr-1: #f9f9f9;
+  --txt-clr-1: #ffffff;
   --txt-clr-2: #D0D6F9;
   --h1-span-clr: #695858;
   --h3-span-clr: #979797;
@@ -30,10 +30,6 @@ body{
   height: 100vh;
 }
 
-
-/***## Destination styling ##***/
-
-/***### Moon ###***/
 
 
 

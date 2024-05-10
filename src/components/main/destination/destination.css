@@ -31,12 +31,13 @@
   }
   .destination h2{
     /* font-family: "Barlow Condensed" sans-serif; */
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Barlow condensed', sans-serif;
     font-weight: 300;
+    letter-spacing: .2rem;
   }
   .destination h2 span{
     color: #695858;
-    font-weight: 650;
+    font-weight: bold;
   }
   .destination .content-bx{
     width: 100%;
@@ -61,7 +62,7 @@
     gap: 10px;
   }
   .destination .content-bx .right .tab-bx{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Barlow condensed', sans-serif;
     display: flex;
     gap: 2.25rem;
     list-style: none;
@@ -69,10 +70,11 @@
     font-size: 1rem;
     
   }
-  .destination .content-bx .right h2{
+  .destination .content-bx .right h3{
     color: var(--txt-clr-1);
     font-size: 100px;
-   
+    font-family: "Bellefair", sans-serif;
+    font-weight: 300;
   }
   .destination .content-bx .right p{
     text-transform: none;
