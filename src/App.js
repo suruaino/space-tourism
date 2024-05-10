@@ -1,17 +1,18 @@
 import React from 'react';
 import './App.css';
-import Header from "./components/Header";
-import Home from "./components/main/Home";
-import Moon from "./components/main/destination/Moon";
+import Header from "./components/header/Header";
+import Home from "./components/main/home/Home";
+// import Destination from "./components/main/destination/Destination";
 import Crew from "./components/main/crew/Crew";
 import Technology from './components/main/technology/Technology';
+import Destination from './components/main/destination/Destination';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Home />
-      <Moon />
+      <Destination />
       <Crew />
       <Technology />
     </div>

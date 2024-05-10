@@ -1,4 +1,6 @@
 import imageLaunch from "./technology-assets/image-launch-vehicle-landscape.jpg";
+import "./technology.css";
+
 const Technology = () => {
   return (
     <div className="technology">
@@ -15,15 +17,11 @@ const Technology = () => {
             </div>
             <div className="content__details">
               <h3>
-                <span>The terminology...</span>Spaceport
+                <span>The terminology...</span>LAUNCH VEHICLE
               </h3>
 
               <p>
-                A spaceport or cosmodrome is a site for launching (or receiving)
-                spacecraft, by analogy to the seaport for ships or airport for
-                aircraft. Based in the famous Cape Canaveral, our spaceport is
-                ideally situated to take advantage of the Earth’s rotation for
-                launch.
+              A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!.
               </p>
             </div>
           </div>

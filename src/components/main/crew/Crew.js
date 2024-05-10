@@ -1,4 +1,5 @@
 import douglas from "./crew-assets/image-douglas-hurley.png";
+import "./crew.css";
 const Crew = () => {
   return (
     <div className="crew">

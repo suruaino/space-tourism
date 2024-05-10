@@ -1,0 +1,112 @@
+.technology{
+    background: url(./technology-assets/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+    display: flex;
+    justify-content: center;
+    
+  
+    width: 100%;
+    /* display: none; */
+  }
+  .launch-vehicle-container{
+    display: flex;
+    flex-direction: column;
+  
+    gap: 65px;
+  
+    width: 100%;
+    max-width: 78%;
+    /* max-width: 1118.5px; */
+    height: 100%;
+    padding-top: 212px;
+    padding-bottom: 6rem;
+    text-transform: uppercase;
+  
+    border: 2px solid red;
+  }
+  .launch-vehicle-container .content-bx{
+    display: flex;
+  }
+  .launch-vehicle-container  h2{
+    font-family: "Barlow condensed", sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 4.72px;
+  }
+  .launch-vehicle-container  h2 span{
+    color: var(--h1-span-clr);
+    
+    /* font-family: "Bellefair", sans-serif; */
+    font-weight: 650;
+  }
+  .launch-vehicle-container h3{
+    font-size: 56px;
+    font-family: "Bellefair", sans-serif;
+    font-weight: 300;
+    gap: 11px;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  .launch-vehicle-container h3 span{
+    font-size: 16px;
+    font-family: "Barlow", sans-serif;
+    letter-spacing: 2.7px;
+  }
+  .launch-vehicle-container p{
+    font-size: 18px;
+    text-transform: none;
+    line-height: 32px;
+  
+    max-width: 27.5rem;
+  
+  }
+  .launch-vehicle-container .content-bx{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .launch-vehicle-container .content{
+    display: flex;
+    gap: 80px;
+  }
+  .launch-vehicle-container .content .content__indicator{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  
+    font-family: "Bellefair", sans-serif;
+    font-size: 32px;
+  }
+  .launch-vehicle-container .content .content__indicator span{
+    width: 80px;
+    aspect-ratio: 1;
+    border: 1px solid var(--indicator-border);
+    border-radius: 50%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .launch-vehicle-container .content .content__details{
+    font-family: "Barlow", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  
+   
+  }
+  .launch-vehicle-container .img-bx{
+    width: 515px;
+    height: 515px;
+  
+  }
+  .launch-vehicle-container .img-bx img{
+    width: 100%;
+    height: 100%;
+  }

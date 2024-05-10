@@ -1,5 +1,6 @@
 import moon from "./destination-assets/image-moon.png";
-const Moon = () => {
+import "./destination.css";
+const Destination = () => {
   return (
     <div className="destination">
       <div className="moon-container">
@@ -40,4 +41,4 @@ const Moon = () => {
   );
 };
 
-export default Moon;
+export default Destination;
