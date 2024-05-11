@@ -5,14 +5,18 @@
     background-size: cover;
   
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     
   
     width: 100%;
     /* display: none; */
   }
   
-  .commander-container{
+  .commander-container,
+  .mission-specialist-container,
+  .flight-engineer-container,
+  .pilot-container{
     width: 100%;
     max-width: 78%;
     
@@ -27,7 +31,7 @@
     border: 1px solid red;
     /* position: relative; */
   }
-  .commander-container .content-bx{
+   .content-bx{
     display: flex;
     flex-direction: column;
     gap: 154px;
@@ -38,7 +42,7 @@
   
     border: 1px solid greenyellow;
   }
-  .commander-container .content-bx .left{
+   .content-bx .left{
     /* margin-top: 154px; */
     border: 1px solid white;
   
@@ -46,7 +50,7 @@
     flex-direction: column;
     gap: 27px;
   }
-  .commander-container .content-bx .right{
+   .content-bx .right{
     /* position: absolute;
     top: 212px;
     bottom: 0;
@@ -90,11 +94,19 @@
     max-width: 60%;
   }
   
-  .crew .indicator{
+  .crew .commander-container .indicator,
+  .crew .mission-specialist-container .indicator,
+  .crew .pilot-container .indicator,
+  .crew .flight-engineer-container .indicator{
     display: flex;
     gap: 1rem;
   }
-  
+  .crew .commander-container .indicator button:nth-child(1),
+  .crew .mission-specialist-container .indicator button:nth-child(2),
+  .crew .pilot-container .indicator button:nth-child(3),
+  .crew .flight-engineer-container .indicator button:nth-child(4){
+    background-color: var(--txt-clr-1);
+  }
   .crew .indicator button{
     width: 15px;
     aspect-ratio: 1;

@@ -103,10 +103,14 @@
     z-index: 2;
     cursor: pointer;
     transition: .3s;
+
+    /* position: absolute; */
+    z-index: 5;
     
   }
   .home .right .explore:hover{
-    border: 50px solid var(--hover-indi-clr);
+    border: 40px solid var(--explore-hover);
+    /* border: 40px solid green; */
   }
   /* .home .right .explore::before{
     content: "";
@@ -117,8 +121,8 @@
     aspect-ratio: 1;
     background-color: red;
 
-    position: absolute;
-    isolation: isolate;
-    z-index: 1;
+    position: relative;
+    isolation: isolate; 
+    z-index: -1;
   } */
  
