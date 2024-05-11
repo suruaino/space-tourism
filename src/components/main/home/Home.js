@@ -15,7 +15,7 @@ const Home = () => {
           </p>
         </div>
         <div class="right">
-          <div class="explore">Explore</div>
+          <button class="explore">Explore</button>
         </div>
       </div>
     </div>

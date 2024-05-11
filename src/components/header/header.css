@@ -32,11 +32,12 @@ header{
   header nav::before{
     content: "";
     display: block;
-    height: 2px;
+    height: 1px;
     width: 60%;
     position: absolute;
     left: -54%;
-    background-color: var(--nav-bg-clr);
+    /* background-color: var(--txt-clr-1); */
+    background-color: var(--hover-clr);
   
   }
   
@@ -73,7 +74,7 @@ header{
   header nav ul li::after{
     content: "";
     display: block;
-    height: 2px;
+    height: 3px;
     width: 100%;
     background-color: transparent;
     position: absolute;
@@ -81,6 +82,6 @@ header{
   }
   header nav ul li:hover::after{
     display: block;
-    background-color: var(--txt-clr-1);
+    background-color: var(--hover-clr);
   }
   

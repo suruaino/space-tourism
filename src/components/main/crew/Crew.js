@@ -23,10 +23,10 @@ const Crew = () => {
             
           </div>
           <div className="indicator">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+              <button></button>
+              <button></button>
+              <button></button>
+              <button></button>
             </div>
         </div>
         <div className="right">

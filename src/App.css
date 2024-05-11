@@ -6,14 +6,18 @@
   box-sizing: border-box;
 }
 :root{
-  --pri-clr: #000;
-  --nav-bg-clr: rgba( 150, 150, 150, .3);
-  --explore-hover: rgba( 200, 200, 200, .2);
-  --txt-clr-1: #ffffff;
+  --pri-clr: #0B0D17;
+
+  --active: #FFFFFF;
+  --hover-clr: hsl(0, 0%, 50%);
+
+  --indicator-bg: hsl(0, 0%, 17.44%);
+  --indicator-hover-bg: hsl(0, 0%, 50.01%);
+  --txt-clr-1: #FFFFFF;
   --txt-clr-2: #D0D6F9;
   --h1-span-clr: #695858;
   --h3-span-clr: #979797;
-  --indicator-border: #979797;
+  /* --indicator-border: #979797; */
 
 }
 body{

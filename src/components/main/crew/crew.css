@@ -95,9 +95,16 @@
     gap: 1rem;
   }
   
-  .crew .indicator span{
+  .crew .indicator button{
     width: 15px;
     aspect-ratio: 1;
     border-radius: 50%;
-    background-color: var(--h3-span-clr);
+    background-color: var(--indicator-bg);
+
+    transition: .4s;
+    border: none;
+    cursor: pointer;
+  }
+  .crew .indicator button:hover{
+    background-color: var(--indicator-hover-bg);
   }

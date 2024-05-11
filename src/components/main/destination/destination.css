@@ -70,6 +70,25 @@
     font-size: 1rem;
     
   }
+  .destination .content-bx .right .tab-bx li{
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+  }
+ .destination .content-bx .right .tab-bx li::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: transparent;
+    /* background-color: var(--txt-clr-1); */
+    position: absolute;
+    bottom: -8px;
+  }
+ .destination .content-bx .right .tab-bx li:hover::after{
+    display: block;
+    background-color: var(--hover-clr);
+  }
   .destination .content-bx .right h3{
     color: var(--txt-clr-1);
     font-size: 100px;
@@ -103,8 +122,10 @@
   .more-details .avg-distance,
   .more-details .travel-time{
     font-size: 14px;
+    font-family: "Barlow condensed", sans-serif;
   }
   
   .more-details .avg-distance__value{
     font-size:  28px;
+    font-family: "Bellefair";
   }
