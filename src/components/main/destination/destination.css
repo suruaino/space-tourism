@@ -1,131 +1,110 @@
 .destination{
     background: url(./destination-assets/background-destination-desktop.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-  
-    width: 100%;
-  
-    display: flex;
-    justify-content: center;
-    
-    /* border: 2px solid red; */
-    /* display: none; */
-  }
-  .moon-container{
+    background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
     flex-direction: column;
-    align-self: center;
-    
-    gap: 65px;
-  
+    align-items: center;
+}
+
+.moon-container,
+.mars-container,
+.europa-container,
+.titan-container{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+
     width: 100%;
     max-width: 78%;
-    /* max-width: 1118.5px; */
+    text-transform: uppercase;
+    font-weight: 300;
     height: 100%;
     padding-top: 212px;
     padding-bottom: 6rem;
-    text-transform: uppercase;
-  
-    border: 2px solid red;
-  }
-  .destination h2{
-    /* font-family: "Barlow Condensed" sans-serif; */
-    font-family:'Barlow condensed', sans-serif;
+
+    border:  1px solid red;
+}
+.destination h2{
+    font-family: "Barlow condensed", sans-serif;
+    font-size: 28px;
     font-weight: 300;
-    letter-spacing: .2rem;
-  }
-  .destination h2 span{
-    color: #695858;
+    letter-spacing: 4.72px;
+}
+.destination h2 span{
+    color: var(--h1-span-clr);
     font-weight: bold;
-  }
-  .destination .content-bx{
-    width: 100%;
-  
+    letter-spacing: 2.75px;
+}
+
+.destination__content-bx{
     display: flex;
     justify-content: center;
-    gap: 175px;
-    
-  }
-  .destination .content-bx > .left{
-    max-width: 27.8125rem;
-    aspect-ratio: 1;
-  }
-  .destination .content-bx > .right{
-    max-width: 25%;
-    max-width: 27.8125rem;
-    color: var(--txt-clr-2);
-  
+    gap: 157px;
+}
+.destination__content-bx > .left{
+    max-width: 445px;
+    height: 445px;
+}
+.destination__content-bx >.left img{
+    width: 100%;
+    height: 100%;
+}
+.destination__content-bx > .right{
+    max-width: 445px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    gap: 10px;
-  }
-  .destination .content-bx .right .tab-bx{
-    font-family:'Barlow condensed', sans-serif;
+    gap: 37px;
+}
+.destination__content-bx > .right .tab-bx{
     display: flex;
-    gap: 2.25rem;
+    gap: 36px;
+    font-size: 16px;
+    font-family: "Barlow condensed", sans-serif;
+
     list-style: none;
-  
-    font-size: 1rem;
-    
-  }
-  .destination .content-bx .right .tab-bx li{
-    height: 100%;
-    position: relative;
+}
+.destination__content-bx > .right .tab-bx li{
+    padding-bottom: 12px;
+    border-bottom: 3px solid transparent;
     cursor: pointer;
-  }
- .destination .content-bx .right .tab-bx li::after{
-    content: "";
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: transparent;
-    /* background-color: var(--txt-clr-1); */
-    position: absolute;
-    bottom: -8px;
-  }
- .destination .content-bx .right .tab-bx li:hover::after{
-    display: block;
-    background-color: var(--hover-clr);
-  }
-  .destination .content-bx .right h3{
-    color: var(--txt-clr-1);
+}
+.moon-container .destination__content-bx  > .right .tab-bx li:nth-child(1),
+.mars-container .destination__content-bx  > .right .tab-bx li:nth-child(2),
+.europa-container .destination__content-bx  > .right .tab-bx li:nth-child(3),
+.titan-container .destination__content-bx  > .right .tab-bx li:nth-child(4){
+    border-bottom: 3px solid var(--active);
+}
+.destination__content-bx > .right .tab-bx li:hover{
+    border-bottom: 3px solid var(--hover-clr);
+}
+.destination__content-bx > .right h3{
     font-size: 100px;
-    font-family: "Bellefair", sans-serif;
     font-weight: 300;
-  }
-  .destination .content-bx .right p{
+}
+.destination__content-bx > .right p{
     text-transform: none;
     font-size: 18px;
-    line-height: 2rem;
-    font-weight: 300;
     font-family: "Barlow", sans-serif;
-  }
-  
-  .more-details{
+    line-height: 32px;
+}
+.destination__content-bx > .right .more-details{
     display: flex;
-    /* justify-content: space-between; */
     gap: 79px;
-  
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--txt-clr-2);
-  }
-  .more-details .left,
-  .more-details .right{
+}
+.destination__content-bx > .right .more-details .left,
+.destination__content-bx > .right .more-details .right{
     display: flex;
     flex-direction: column;
     gap: 12px;
-  }
-  
-  .more-details .avg-distance,
-  .more-details .travel-time{
+}
+
+.destination__content-bx > .right .more-details .average-distance,
+.destination__content-bx > .right .more-details .travel-time{
     font-size: 14px;
-    font-family: "Barlow condensed", sans-serif;
-  }
-  
-  .more-details .avg-distance__value{
-    font-size:  28px;
-    font-family: "Bellefair";
-  }
+}
+.destination__content-bx > .right .more-details .avg-distance__value{
+    font-size: 28px;
+}
