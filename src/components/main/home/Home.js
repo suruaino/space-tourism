@@ -1,5 +1,13 @@
+import { useState } from "react";
 import "./home.css";
 const Home = () => {
+
+// const [visible, setVisibility] = useState({Home});
+
+// const handleClick = () => {
+//   setVisibility ({});
+// }
+
   return (
     <div className="home">
       <div className="home-container">
@@ -15,7 +23,7 @@ const Home = () => {
           </p>
         </div>
         <div class="right">
-          <button class="explore">Explore</button>
+          <button  class="explore">Explore</button>
         </div>
       </div>
     </div>

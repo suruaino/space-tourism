@@ -10,7 +10,7 @@
     
   
     width: 100%;
-    /* display: none; */
+
   }
   .launch-container,
   .spaceport-container,
@@ -22,13 +22,17 @@
   
     width: 100%;
     max-width: 78%;
-    /* max-width: 1118.5px; */
     height: 100%;
     padding-top: 212px;
     padding-bottom: 6rem;
     text-transform: uppercase;
   
     border: 2px solid red;
+
+    display: none;
+  }
+  .launch-container{
+    display: flex;
   }
   .technology h2{
     font-family: "Barlow condensed", sans-serif;

@@ -30,6 +30,10 @@
     /* padding-bottom: 6rem; */
     border: 1px solid red;
     /* position: relative; */
+    display: none;
+  }
+  .commander-container{
+    display: flex;
   }
    .content-bx{
     display: flex;
