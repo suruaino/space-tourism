@@ -3,9 +3,13 @@ import mars from "./destination-assets/image-mars.png";
 import europa from "./destination-assets/image-europa.png";
 import titan from "./destination-assets/image-titan.png";
 import "./destination.css";
+import Header from "../../header/Header.js";
 const Destination = () => {
   return (
+    
     <div className="destination">
+      <Header />
+
       <div className="moon-container">
         <h2>
           <span>01</span> Pick your destination

@@ -2,10 +2,12 @@ import imageLaunch from "./technology-assets/image-launch-vehicle-portrait.jpg";
 import spaceport from "./technology-assets/image-spaceport-portrait.jpg";
 import capsule from "./technology-assets/image-space-capsule-portrait.jpg";
 import "./technology.css";
+import Header from "../../header/Header.js";
 
 const Technology = () => {
   return (
     <div className="technology">
+      <Header />
       <div className="launch-container">
         <h2>
           <span>03</span> Space launch 101
